@@ -1,25 +1,39 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Overpass&display=swap');
 
 body {
 	font-family: 'Montserrat', sans-serif;
 	color: white;
 	background: rgb(22, 22, 22);
+	overflow-x: hidden;
 }
 
 section {
 	position: relative;
-	border-bottom: 2px solid #ccc;
+	/* border-bottom: 2px solid rgb(204, 204, 204); */
+}
+
+h2 {
+	margin-top: -20px;
+	font-size: 30px;
+}
+
+.App {
+	width: 100%;
+	height: 100vh;
 }
 
 /* ---------- Title ---------- */
 .title {
-	height: 70vh;
+	height: 60vh;
 	font-family: Banaue;
+	background: white;
+	color: black;
 }
 
 .title-lastname {
 	position: absolute;
-	top: 4%;
+	top: -3%;
 	left: 15%;
 	margin: 0;
 }
@@ -28,12 +42,12 @@ section {
 	font-size: 100px;
 	margin: 0;
 	letter-spacing: 20px;
-	line-height: 150%;
+	line-height: 100%;
 }
 
 .paris {
 	position: absolute;
-	top: 25%;
+	top: 15%;
 	left: 15%;
 	font-size: 400px;
 	margin: 0;
@@ -42,18 +56,24 @@ section {
 .black-box {
 	position: absolute;
 	width: 100%;
-	height: 550px;
-	background-color: rgba(22, 22, 22);
+	height: 460px;
+	background-color: rgb(255, 255, 255);
 }
-
-.thaiSoc-logo {
+.thaiSoc-logo-container {
 	position: absolute;
-	cursor: pointer;
-	width: 250px;
-	top: 30%;
+	top: 20%;
 	right: 15%;
 }
 
+.thaiSoc-logo {
+	cursor: pointer;
+	width: 250px;
+}
+.small-logo {
+	width: 200px;
+	vertical-align: middle;
+	cursor: pointer;
+}
 .gif {
 	height: 90vh;
 }
@@ -78,27 +98,134 @@ section {
 	top: 10%;
 	left: 20%;
 	font-size: 20px;
+	line-height: 30px;
 	width: 50%;
+}
+.line {
+	z-index: -1;
+	position: absolute;
+	top: -4%;
+	left: 21%;
 }
 
 .work {
-	height: 100vh;
+	background: rgb(22, 22, 22);
+	background-image: url('./images/S.png');
+	background-size: 90%;
+	background-position-y: 50%;
+	background-position-x: 80%;
+	/* background-position: center; */
+	height: 120vh;
+	line-height: 1.6;
 }
 .work-title {
 	position: absolute;
-	right: -27%;
-	top: 100%;
+	right: -20%;
 	font-size: 150px;
-	margin-top: 350px;
+	margin-top: 200px;
 	transform: rotate(270deg);
 }
+.S {
+	z-index: -1;
+}
+.work-sertis {
+	width: 100%;
+	height: 100%;
+	padding: 20px;
+	font-family: Noto Mono;
+}
+.grid-container {
+	margin: 100px 200px;
+	display: grid;
+	grid-template-columns: 50% 50%;
+	grid-template-rows: 80% 80%;
+}
+.sub-grid-container-1 {
+	width: 80%;
+	margin-left: -10px;
+	margin-top: 100px;
+}
+.sub-grid-container-2 {
+	width: 70%;
+	margin-left: 30px;
+	margin-top: -50px;
+}
+.sub-grid-container-3 {
+	width: 80%;
+	margin-top: -30px;
+	margin-left: -70px;
+}
 .sertis-logo {
-	position: absolute;
 	cursor: pointer;
-	width: 250px;
-	top: 30%;
-	right: 15%;
+	width: 500px;
 }
 .project {
+	background: rgb(22, 22, 22);
+	height: 150vh;
+}
+.github_container {
+	padding: 3px 20px;
+	background: rgba(255, 255, 255, 0.781);
+	border-radius: 12px;
+	background-blend-mode: lighten;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: fit-content;
+	margin: auto;
+	margin-top: 40px;
+	transition: 0.3s;
+	cursor: pointer;
+	font-size: 30px;
+	font-family: Banaue;
+	color: black;
+}
+.github_container:hover {
+	border-radius: 30px;
+	font-size: 40px;
+	background: rgba(255, 255, 255, 0.89);
+}
+.github_logo {
+	margin-left: -15px;
+	margin: 5px;
+	width: 50px;
+}
+.project-title-container {
+	margin-left: -800px;
+}
+.project-title {
+	margin: 0;
+	font-size: 150px;
+}
+.Obeo {
+	margin: 60px 100px;
+	padding: 40px;
+	width: 40%;
+	border: 2px solid rgb(204, 204, 204);
+	font-size: 16px;
+	line-height: 24px;
+}
+
+.Obeo h1 {
+	margin: 0;
+}
+
+.other {
 	height: 100vh;
+	text-align: center;
+}
+.other-title-container {
+	margin-top: -50px;
+}
+.other-title {
+	font-size: 200px;
+	margin: 0;
+}
+
+.footer {
+	height: 10vh;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-around;
 }
