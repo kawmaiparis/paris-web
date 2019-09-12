@@ -133,12 +133,12 @@ class App extends React.Component {
 					</div>
 				</section>
 				<section className='gif'>
-					<video autoplay controls loop>
-						<source
-							src='https://jobs.dorfjungs.com/intro.1271fca1.mp4'
-							type='video/mp4'
-						/>
-					</video>
+					<video
+						autoPlay
+						muted
+						loop
+						src='https://jobs.dorfjungs.com/intro.1271fca1.mp4'
+					></video>
 				</section>
 
 				<section className='about'>
